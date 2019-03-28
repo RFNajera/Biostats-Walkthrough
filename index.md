@@ -145,6 +145,8 @@ One of the assumptions made in these statistical tests is that the variable in q
 
 ### Question: What if a sample of six birth weights were, in pounds: 1.25, 4.35, 5.65, 2.33, 4.95, and 6.90. Did this sample come from the population?
 
+### Question: Scientists say that women taking a supplement give birth to babies who weigh more than the average baby in the population. They report that the average birth weight for a baby born to a woman taking the supplement is 7.2 pounds with a standard deviation of 0.9 pounds. Are babies born to women taking the supplement heavier than the babies in the population?
+
 # One Sample t Test
 
 ### Question: An OB/Gyn says that they helped deliver a child that weighed 12 pounds. What is the probability that a child of that weight was delivered?
