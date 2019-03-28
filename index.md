@@ -44,6 +44,25 @@ There are two basic types of variables: **Continous** and **Categorical**.
 - Dichotomous
   - Dichotomous variables are those that have exactly two possible categories and said categories are not in any order. For example, men and women, up and down, left and right, inside and outside... All of these have two possibilities and there is no one that must come before the other.
 
+# Looking at Data
+Before we continue, we need to look at the data in our dataset and understand it.
+
+- Father's age (fage):
+- Mother's age (mage):
+- Mature (mature):
+- Weeks of gestation (weeks):
+- Premature birth (premie):
+- Visits to physician (visits):
+- Marital status (marital):
+- Weight gained during pregancy (gained):
+- Birth weight (weight):
+- Low birth weight (lowbirthweight):
+- Baby gender (gender):
+- Mom's smoking status (habit):
+- Mom's ethnicity (whitemom):
+
+## **For the purposes of this walkthrough, we will call the entire dataset the "population" and samples derived from it will be called "samples."**
+
 # The Central Limit Theorem
 When you draw a sample from a population, the average (mean) of that sample will be normally distributed (bell-shaped) around a sample mean that is very close to the mean of the population (usually written as **µ** in statistics). As you increase the sample size, the mean of those samples will still be very close to the mean of the population but the spread of the numbers away from the sample mean (the sample standard deviation) is tighter.
 
@@ -79,32 +98,87 @@ Run the code above a third time for 500 samples of size 100 each. You should get
 
 What do you notice about the width of the histograms as the sample sizes get bigger? Based on these samples, what would you guess the average age of a mother in the 2004 NC births dataset is? What would you guess is the average age of all mothers? What if the sample size were 1,000? (The entire dataset contains 1,000 observations.)
 
-So why did the histograms get narrower? It has to do with the sample standard error of the sample. That standard error (the standard deviation of the sample) is calculated by taking the population standard deviation (sigma) and dividing it by the square of the sample size (n): σ / $\sqrt{n}$
+So why did the histograms get narrower? It has to do with the sample standard error of the sample. That standard error (the standard deviation of the sample) is calculated by taking the population standard deviation (sigma) and dividing it by the square of the sample size (n): σ / √n
 
-# Parametric and Non-Parametric Tests
+As a result, as the sample size (n) gets bigger, the standard error (which determines the spread of the histogram) gets smaller.
 
-# Looking at Data
+# The Assumption of Normality
+One of the assumptions made in these statistical tests is that the variable in question is normally distributed. If it is not, we will need to do *non-parametric* tests (which is a whole other walkthrough). One quick way to assess the *normality* of the data is to plot it on a histogram (like we did above) and see the shape.
 
-### Is It Normally Distributed?
+### Question: Is maternal age normally distributed in the data set (population)?
+
+### Question: Is birth weight normally distributed in the population?
+
+### Question: Is weight gained during pregnancy normally distributed in the population?
 
 ### Are There Outliers?
 
 # Is There an Association?
 
+### Question: Is there an association between a baby being born prematurely and the mom being a smoker?
+
+### Question: Is there an association between a baby being born prematurely and the mom being white?
+
+### Question: Is there an association between a mom being white and smoking?
+
+### Question: Is there an assocaition between a baby being born prematurely and the mom being a smoker and white? (The Cochran-Mantel-Haenszel Method)
+
+# Confounding?
+
+### Question: Is smoking habit a confounder of the association between a baby being premature and the mom being white?
+
 # A Sample From a Population
+
+### Let's create two samples: A and B and do some tests...
 
 # One Sample Z Test
 
+### Question: Did sample A come from the dataset?
+
+### Question: What if a sample of six birth weights were, in pounds: 1.25, 4.35, 5.65, 2.33, 4.95, and 6.90. Did this sample come from the population?
+
 # One Sample t Test
+
+### Question: An OB/Gyn says that they helped deliver a child that weighed 12 pounds. What is the probability that a child of that weight was delivered?
+
+### Question: A pediatrician reports that they treated a child that weighed 1.2 pounds. What is the probability that a child of that weight was delivered?
+
+### Question: What is the 95% confidence interval for the mean of the population based on sample B?
 
 # Comparing the Means of Two Groups
 
+### Question: Is the mean age of moms to premature babies different than the mean age of moms to non-premature babies different?
+
+### Question: Is the mean birth weight of premature babies different than the mean birth weight of non-premature babies?
+
+### Question: Is the mean birth weight of babies born to smoking mom different than the mean birth weight of babies born to non-smoking moms?
+
 # Comparing the Proportions of Two Groups
+
+### Question: Is the proportion of male babies from white women different to the proportion of male babies from non-white women?
 
 # Comparing the Means of Three or More Groups: ANOVA
 
+### Question: Is the mean gestation time different between women in their 20s, 30s and 40s?
+
 # Simple Linear Regression
+
+### Question: What is the mean birth weight for babies based on mom's age? Is it significant?
+
+### Question: What is the mean birth weight for babies based on mom's gained weight during pregnancy? Is it significant?
 
 # Multiple Linear Regression
 
+### Question: What is the mean birth weight for babies based on mom's age and how much weight they gained during pregnancy?
+
 # Logistic Regression
+
+### Question: What are the odds of a baby being premature based on mom's age?
+
+### Question: What are the odds of a baby being premature based on mom's weight gain during pregnancy?
+
+### Question: What are the odds of a baby being premature based on mom's smoking habit?
+
+### Question: What are the odds of a baby being premature based on mom's ethnicity?
+
+### Question: What are the odds of a baby being premature based on mom's age, weight gain, smoking habit and ethnicity?
