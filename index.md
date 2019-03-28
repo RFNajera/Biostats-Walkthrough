@@ -33,7 +33,7 @@ library(ggpubr)
 # Types of Variables
 There are two basic types of variables: **Continous** and **Categorical**.
 
-- Continous
+- Continuous
   - Continous variables are those that are on the number scale (negative infinity to positive infinity) and have an infinite number of values between two values. For example, the weight of rocks from a quarry can be continous if they're in kilograms (e.g. 1.56 kg) and the differences between them are on the same scale (e.g. 1.56 kg to 5.56 kg have a difference of 4 kg, 4000 g, or 4000000mg).
 - Discrete
   - Discrete variables are similar to continous variables except that they have a finite number of values between them. For example, the weight of rocks, but only counted in half kilos (e.g. 1.56 kg to 5.56 kg have a difference of 4 kg or 8 half kilograms).
