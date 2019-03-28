@@ -1,4 +1,11 @@
 # Biostats Walkthrough
+{:.no_toc}
+
+# Table of Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
 # Data Source
 The State of North Carolina released some data through their vital statistics program that is in a comma-separated values format (.csv) and is [available to download by clicking here](https://www.dropbox.com/s/xzbrkjb6lyek7v7/nc.csv?dl=0).
@@ -47,19 +54,19 @@ There are two basic types of variables: **Continous** and **Categorical**.
 # Looking at Data
 Before we continue, we need to look at the data in our dataset and understand it.
 
-- Father's age (fage):
-- Mother's age (mage):
-- Mature (mature):
-- Weeks of gestation (weeks):
-- Premature birth (premie):
-- Visits to physician (visits):
-- Marital status (marital):
-- Weight gained during pregancy (gained):
-- Birth weight (weight):
-- Low birth weight (lowbirthweight):
-- Baby gender (gender):
-- Mom's smoking status (habit):
-- Mom's ethnicity (whitemom):
+- Father's age (fage): Father's age in years.
+- Mother's age (mage): Mother's age in years.
+- Mature (mature): Maturity status of the mother.
+- Weeks of gestation (weeks): Weeks of gestation in weeks.
+- Premature birth (premie): Was the baby born premature or not?
+- Visits to physician (visits): Number of visits for prenatal care.
+- Marital status (marital): Is the mother married?
+- Weight gained during pregancy (gained): How much weight in pounds did the mother gain during pregnancy?
+- Birth weight (weight): The birth weight of the baby, in pounds.
+- Low birth weight (lowbirthweight): Was the baby classified as being low birth weight?
+- Baby gender (gender): Baby's gender.
+- Mom's smoking status (habit): Was the mother a smoker or non-smoker?
+- Mom's ethnicity (whitemom): Was the mom white or non-white?
 
 ## **For the purposes of this walkthrough, we will call the entire dataset the "population" and samples derived from it will be called "samples."**
 
@@ -143,17 +150,17 @@ One of the assumptions made in these statistical tests is that the variable in q
 
 ### Question: Did sample A come from the dataset?
 
+### Question: An OB/Gyn says that they helped deliver a child that weighed 12 pounds. What is the probability that a child of that weight was delivered?
+
+### Question: A pediatrician reports that they treated a child that weighed 1.2 pounds. What is the probability that a child of that weight was delivered?
+
 ### Question: What if a sample of six birth weights were, in pounds: 1.25, 4.35, 5.65, 2.33, 4.95, and 6.90. Did this sample come from the population?
 
 ### Question: Scientists say that women taking a supplement give birth to babies who weigh more than the average baby in the population. They report that the average birth weight for a baby born to a woman taking the supplement is 7.2 pounds with a standard deviation of 0.9 pounds. Are babies born to women taking the supplement heavier than the babies in the population?
 
 # One Sample t Test
 
-### Question: An OB/Gyn says that they helped deliver a child that weighed 12 pounds. What is the probability that a child of that weight was delivered?
-
-### Question: A pediatrician reports that they treated a child that weighed 1.2 pounds. What is the probability that a child of that weight was delivered?
-
-### Question: What is the 95% confidence interval for the mean of the population based on sample B?
+### Sample B was drawn from the population. What can we estimate about the population if we didn't know what we know about the population just by using sample B?
 
 # Comparing the Means of Two Groups
 
@@ -162,6 +169,8 @@ One of the assumptions made in these statistical tests is that the variable in q
 ### Question: Is the mean birth weight of premature babies different than the mean birth weight of non-premature babies?
 
 ### Question: Is the mean birth weight of babies born to smoking mom different than the mean birth weight of babies born to non-smoking moms?
+
+### Question: Suppose that women who gave birth to underweight babies were then given a supplement before and durign their second pregnancy and their second set of babies has a different birth weight. How can we tell if the mean weight of the second group is higher than the mean weight of the first?
 
 # Comparing the Proportions of Two Groups
 
