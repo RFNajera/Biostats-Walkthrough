@@ -113,6 +113,24 @@ As a result, as the sample size (n) gets bigger, the standard error (which deter
 One of the assumptions made in these statistical tests is that the variable in question is normally distributed. If it is not, we will need to do *non-parametric* tests (which is a whole other walkthrough). One quick way to assess the *normality* of the data is to plot it on a histogram (like we did above) and see the shape.
 
 ### Question: Is maternal age normally distributed in the data set (population)?
+There are different ways to see if the maternal age is normally distributed.
+
+Let's do a density curve:
+```R
+ggdensity(births$mage, 
+          main = "Density plot of maternal age",
+          xlab = "Maternal Age")
+```
+
+Let's look at the [QQ Plot](https://data.library.virginia.edu/understanding-q-q-plots/):
+```R
+ggqqplot(births$mage)
+```
+
+Finally, let's do a [Shapiro-Wilk's test](https://www.itl.nist.gov/div898/handbook/prc/section2/prc213.htm).
+```R
+shapiro.test(births$mage) # If p<0.05, then distribution of "mage" is different than normal.
+```
 
 ### Question: Is birth weight normally distributed in the population?
 
