@@ -69,6 +69,14 @@ This gives you the following histogram:
 
 ![Histogram for 500 samples of size 5](https://raw.githubusercontent.com/RFNajera/Biostats-Walkthrough/master/histogram_n_5.png)
 
+Run the code above for 500 samples of size 25 each. You should get a histogram that is narrower:
+
+![Histogram for 500 samples of size 25](https://github.com/RFNajera/Biostats-Walkthrough/blob/master/histogram_n_25.png?raw=true)
+
+![Histogram for 500 samples of size 100](https://github.com/RFNajera/Biostats-Walkthrough/blob/master/histogram_n_100.png?raw=true)
+
+What do you notice about the width of the histograms as the sample sizes get bigger? Based on these samples, what would you guess the average age of a mother in the 2004 NC births dataset is? What would you guess is the average age of all mothers?
+
 ### The Assumption of Normality
 
 ### Different Distributions for Different Analyses
