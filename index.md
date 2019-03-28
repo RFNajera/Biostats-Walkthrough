@@ -1,4 +1,4 @@
-# Introduction
+# Biostats Walkthrough
 
 # Data Source
 The State of North Carolina released some data through their vital statistics program that is in a comma-separated values format (.csv) and is [available to download by clicking here](https://www.dropbox.com/s/xzbrkjb6lyek7v7/nc.csv?dl=0).
