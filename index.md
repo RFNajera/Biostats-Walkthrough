@@ -31,7 +31,7 @@ library(ggpubr)
 ```
 
 # Types of Variables
-There are two basic types of variables: Continous and Categorical.
+There are two basic types of variables: **Continous** and **Categorical**.
 
 - Continous
   - Continous variables are those that are on the number scale (negative infinity to positive infinity) and have an infinite number of values between two values. For example, the weight of rocks from a quarry can be continous if they're in kilograms (e.g. 1.56 kg) and the differences between them are on the same scale (e.g. 1.56 kg to 5.56 kg have a difference of 4 kg, 4000 g, or 4000000mg).
@@ -45,6 +45,29 @@ There are two basic types of variables: Continous and Categorical.
   - Dichotomous variables are those that have exactly two possible categories and said categories are not in any order. For example, men and women, up and down, left and right, inside and outside... All of these have two possibilities and there is no one that must come before the other.
 
 # The Central Limit Theorem
+When you draw a sample from a population, the average (mean) of that sample will be normally distributed (bell-shaped) around a sample mean that is very close to the mean of the population (usually written as **µ** in statistics). As you increase the sample size, the mean of those samples will still be very close to the mean of the population but the spread of the numbers away from the sample mean (the sample standard deviation) is tighter.
+
+Check out this video on YouTube for more of an explanation:
+[![Understanding The Central Limit Theorem](https://img.youtube.com/vi/_YOr_yYPytM/0.jpg)](https://www.youtube.com/watch?v=_YOr_yYPytM)
+
+As the video points out, you can make some inferences on the population based on the sample. Let's practice this with the NC birth data:
+
+### Exercise 1. Draw 500 samples of different sizes from the data and plot the average age of those samples in a histogram.
+
+First, let's look at 500 samples of size n=5:
+
+```R
+mu=mean(births$mage) # The mean of the population is the mean of age in the entire dataset
+sigma=sd(births$mage) # The standard deviation of the population age
+n=5 # Sample size
+xbar=rep(0,500) # How many sample means
+for (i in 1:500) {xbar[i]=mean(rnorm(n,mean=mu,sd=sigma))} # Loop to do the sampling 500 times
+hist(xbar,prob=TRUE,breaks=12,xlim=c(16,40),ylim=c(0,0.25),main = "Histogram of Sample Means (n=5)") #Draw the historgram
+```
+
+This gives you the following histogram:
+
+![Histogram for 500 samples of size 5](https://raw.githubusercontent.com/RFNajera/Biostats-Walkthrough/master/histogram_n_5.png)
 
 ### The Assumption of Normality
 
