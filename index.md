@@ -111,7 +111,15 @@ One of the assumptions made in these statistical tests is that the variable in q
 
 ### Question: Is weight gained during pregnancy normally distributed in the population?
 
-### Are There Outliers?
+### Question: Are there outliers in the birth weight of the babies?
+
+# Correlation
+
+### Question: Is there a correlation between birth weight and mom's age?
+
+### Question: Is there a correlation between birth weight and weight gained during pregnancy?
+
+### Question: Is there a correlation between mom's age and father's age?
 
 # Is There an Association?
 
