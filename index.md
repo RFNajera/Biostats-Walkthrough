@@ -79,7 +79,7 @@ Run the code above a third time for 500 samples of size 100 each. You should get
 
 What do you notice about the width of the histograms as the sample sizes get bigger? Based on these samples, what would you guess the average age of a mother in the 2004 NC births dataset is? What would you guess is the average age of all mothers? What if the sample size were 1,000? (The entire dataset contains 1,000 observations.)
 
-So why did the histograms get narrower? It has to do with the sample standard error of the sample. That standard error (the standard deviation of the sample) is calculated by taking the population standard deviation (sigma) and dividing it by the square of the sample size (n): σ / \sqrt{n}
+So why did the histograms get narrower? It has to do with the sample standard error of the sample. That standard error (the standard deviation of the sample) is calculated by taking the population standard deviation (sigma) and dividing it by the square of the sample size (n): σ / $\sqrt{n}$
 
 # Parametric and Non-Parametric Tests
 
