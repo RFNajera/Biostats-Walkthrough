@@ -1,11 +1,4 @@
 # Biostats Walkthrough
-{:.no_toc}
-
-# Table of Contents
-{:.no_toc}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 # Data Source
 The State of North Carolina released some data through their vital statistics program that is in a comma-separated values format (.csv) and is [available to download by clicking here](https://www.dropbox.com/s/xzbrkjb6lyek7v7/nc.csv?dl=0).
@@ -133,10 +126,13 @@ shapiro.test(births$mage) # If p<0.05, then distribution of "mage" is different 
 ```
 
 ### Question: Is birth weight normally distributed in the population?
+Use the procedures above to confirm this.
 
 ### Question: Is weight gained during pregnancy normally distributed in the population?
+Use the procedures above to confirm this.
 
 ### Question: Are there outliers in the birth weight of the babies?
+To dinf outliers, we can use a [box plot](https://www.purplemath.com/modules/boxwhisk3.htm) 
 
 # Correlation
 
